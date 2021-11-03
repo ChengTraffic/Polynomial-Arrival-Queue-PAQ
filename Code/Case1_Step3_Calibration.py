@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Citation: Cheng, Q., Liu, Z., Guo, J., Wu, X., Pendyala, R., Belezamo, B., 
-# & Zhou, X. 2022. Estimating key traffic state parameters through parsimonious
-# spatial queue models. Under review with Transportation Research Part C.
-
 import numpy as np
 import pandas as pd
 from math import sqrt
@@ -636,7 +632,6 @@ if __name__ == '__main__':
     solver.plot_CumulativeDepartureCurve(mu)
     solver.plot_InflowRate(mu, gamma, m)
     solver.plot_QueueLength(mu, gamma, m)
-    solver.plot_DelayTime(mu, gamma, m)
     solver.plot_MU(flow_raw_copy, mu)
     '''
     # Calibration with Bayesion optimization
